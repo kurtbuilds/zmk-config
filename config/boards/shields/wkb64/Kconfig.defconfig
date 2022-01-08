@@ -1,0 +1,22 @@
+if SHIELD_WKB64_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "wkb64 Left"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_WKB64_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "wkb64 Right"
+
+config ZMK_SPLIT
+    default y
+
+endif

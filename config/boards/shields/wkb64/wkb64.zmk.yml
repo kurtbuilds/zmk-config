@@ -1,0 +1,13 @@
+file_format: "1"
+id: wkb64
+name: Wkb64
+type: shield
+url: https://github.com/kata0510/Lily58
+requires: [nice_nano]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - wkb64_left
+  - wkb64_right
