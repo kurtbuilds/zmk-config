@@ -107,3 +107,17 @@ Put components facing down if in the white lines, facing up if NOT in white line
     - 4 screws
     - acrylic cover.
 - You can move the thumb clusters a mm or two closer.
+
+
+
+# Building it
+
+Two options. 
+
+1. Github actions
+2.  checkout zmk alongside zmk-config, and then use -s to point to the zmk/app
+    folder, while running it from the zmk_config folder? Correct, that should
+    work OK. I am pretty sure you need to provide the config location to the
+    command so there isn’t much benefit to being in the config folder.  I
+    always build from zmk/app while pointing to the config folder with its full
+    path, to pick up the keymap from there
