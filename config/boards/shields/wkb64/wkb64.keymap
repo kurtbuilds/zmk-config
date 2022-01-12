@@ -20,6 +20,19 @@ https://zmk.dev/docs/codes/
 */
 
 / {
+    behaviors {
+        mo_tog: behavior_mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "mo_tog";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&tog>;
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -35,7 +48,7 @@ https://zmk.dev/docs/codes/
     &kp TAB   &kp Q     &kp W     &kp P     &kp D     &kp F                                                &kp Y     &kp U     &kp L     &kp K     &kp SEMI  &kp MINUS
 &mt LCTRL ESC &kp A     &kp S     &kp T     &kp R     &kp G                                                &kp H     &kp N     &kp E     &kp I     &kp O     &kp SQT
     &none     &lt 2 Z   &kp X     &kp C     &kp V     &kp B     &none                            &none     &kp J     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp UP
-    &none     &sk LCTRL &sk LALT            &sk LGUI  &kp SPACE &kp BSPC  &kp DEL      &sl LAUNC &kp ENTER &sk LSHFT &sl PROGR                     &kp LEFT  &kp DOWN  &kp RIGHT
+    &none     &sk LCTRL &sk LALT            &sk LGUI  &kp SPACE &kp BSPC  &kp DEL      &sl LAUNC &kp ENTER &sk LSHFT &mo_tog PROGR                     &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
 
