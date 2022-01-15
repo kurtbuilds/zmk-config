@@ -32,6 +32,7 @@ https://zmk.dev/docs/codes/
     };
 };
 
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -45,10 +46,10 @@ https://zmk.dev/docs/codes/
 // |   DOT   |   CTRL  |   OPT   |         |   GUI   |  SPACE  |   BSPC  |   DOT   |  |   DOT   |  ENTER  |  SHIFT  |  PROGR  |                   |   LEFT  |   DOWN  |  RIGHT  |
             bindings = <
     &kp GRAVE &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                                               &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp BSLH
-    &kp TAB   &kp Q     &kp W     &kp P     &kp D     &kp F                                                &kp Y     &kp U     &kp L     &kp K     &kp SEMI  &kp MINUS
-&mt LCTRL ESC &kp A     &kp S     &kp T     &kp R     &kp G                                                &kp H     &kp N     &kp E     &kp I     &kp O     &kp SQT
+    &kp TAB   &kp Q     &kp W     &kp P     &kp D     &kp F                                                &kp K     &kp L     &kp U     &kp Y     &kp SEMI  &kp MINUS
+&mt LCTRL ESC &kp A     &kp S     &kp R     &kp T     &kp G                                                &kp H     &kp N     &kp E     &kp I     &kp O     &kp SQT
     &kp LSHFT &lt 2 Z   &kp X     &kp C     &kp V     &kp B     &none                            &none     &kp J     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp UP
-    &sl LAUNC &sk LCTRL &sk LALT            &sk LGUI  &kp SPACE &kp BSPC  &kp DEL      &sl LAUNC &kp ENTER &sk LSHFT &mo_tog 2 2                   &kp LEFT  &kp DOWN  &kp RIGHT
+    &kp LAUNC &kp LCTRL &kp LALT            &kp LGUI  &kp LSHFT &kp BSPC  &kp DEL      &mo LAUNC &kp ENTER &kp SPACE &mo_tog 2 2                   &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
 
@@ -101,3 +102,4 @@ https://zmk.dev/docs/codes/
         };
     };
 };
+

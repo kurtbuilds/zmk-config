@@ -53,6 +53,18 @@ RC(4,0) RC(4,1) RC(4,2)      RC(4,3) RC(4,4) RC(4,5) RC(4,6) RC(4,13) RC(4,12) R
 	};
 };
 
+
+/ {
+    ext-power {
+        compatible = "zmk,ext-power-generic";
+        label = "EXT_POWER";
+        control-gpios = <&gpio0 38 GPIO_ACTIVE_HIGH>;
+        init-delay-ms = <50>;
+    };
+
+
+};
+
 &pro_micro_i2c {
 	status = "okay";
 
