@@ -48,7 +48,7 @@ https://zmk.dev/docs/codes/
     &kp TAB   &kp Q     &kp W     &kp P     &kp D     &kp F                                                &kp J     &kp L     &kp U     &kp Y     &kp SEMI  &kp MINUS
 &mt LCTRL ESC &kp A     &kp S     &kp R     &kp T     &kp G                                                &kp H     &kp N     &kp E     &kp I     &kp O     &kp SQT
     &kp LSHFT &lt 2 Z   &kp X     &kp C     &kp V     &kp B     &none                            &none     &kp K     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp UP
-    &none     &kp LCTRL &kp LALT            &kp LGUI  &kp SPACE &kp ENTER  &sl LAUNC      &kp DEL &kp BSPC &kp LSHFT &mo_tog 2 2                   &kp LEFT  &kp DOWN  &kp RIGHT
+    &none     &kp LCTRL &kp LALT            &kp LGUI  &kp SPACE &kp BSPC  &kp DEL      &sl LAUNC &kp ENTER &kp LSHFT &mo_tog 2 2                   &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
 
