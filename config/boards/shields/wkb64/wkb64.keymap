@@ -92,7 +92,7 @@ https://zmk.dev/docs/codes/
 // |   DOT   |         |    *    |    [    |    ]    |    @    |   DOT   |         |  |         |   DOT   |         |    1    |    2    |    3    |         |    UP   |
 // |   DOT   |   CTRL  |   OPT   |         |   GUI   |  SPACE  |   BSPC  |   DOT   |  |   DOT   |  ENTER  |    0    |   ...   |                   |   LEFT  |   DOWN  |  RIGHT  |
             bindings = <
-    &none      &none      &none     &none     &none     &ext_power EP_ON                              &ext_power EP_ON &none      &none        &none     &none     &none
+    &none      &none      &none     &none     &none     &ext_power EP_ON                              &ext_power EP_ON &none      &none        &none     &none     &bt BT_CLR
     &none      &none      &none     &none     &none     &ext_power EP_OFF                            &ext_power EP_OFF &kp C_NEXT &kp C_VOL_UP &none     &none     &none
     &to DFALT  &none      &none     &none     &none     &none                                                &none     &kp C_PP   &kp C_MUTE   &none     &none     &none
     &none      &to QWRTY  &none     &none     &none     &none     &none                            &none     &none     &kp C_PREV &kp C_VOL_DN &none     &none     &none
