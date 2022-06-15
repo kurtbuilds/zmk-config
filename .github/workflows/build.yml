@@ -30,9 +30,9 @@ jobs:
       matrix: ${{fromJson(needs.matrix.outputs.matrix)}}
     steps:
       - name: Setup cmake
-          uses: jwlawson/actions-setup-cmake@v1.12
-          with:
-            cmake-version: '3.2.x'
+        uses: jwlawson/actions-setup-cmake@v1.12
+        with:
+          cmake-version: '3.2.x'
       - name: Use cmake
         run: cmake --version
       - name: Prepare variables
