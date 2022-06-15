@@ -12,6 +12,12 @@
 #     shield: reviung41
 #
 ---
+board:
+    - nice_nano_v2
+shield:
+    - wkb64_left
+    - wkb64_right
+
 include:
   - board: nice_nano_v2
     shield: wkb64_left
