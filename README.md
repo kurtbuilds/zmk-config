@@ -122,3 +122,9 @@ Two options.
     command so there isn’t much benefit to being in the config folder.  I
     always build from zmk/app while pointing to the config folder with its full
     path, to pick up the keymap from there
+
+# Flashing
+
+1. Double tap reset button.
+2. Device shows up as USB storage.
+2. Drag uf2 onto USB storage device.
