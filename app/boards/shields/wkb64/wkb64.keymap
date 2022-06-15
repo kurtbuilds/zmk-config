@@ -18,19 +18,6 @@ https://zmk.dev/docs/codes/
 */
 
 / {
-    behaviors {
-        mo_tog: behavior_mo_tog {
-            compatible = "zmk,behavior-hold-tap";
-            label = "mo_tog";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&tog>;
-        };
-    };
-};
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -65,5 +52,6 @@ https://zmk.dev/docs/codes/
     &trans    &trans    &trans              &trans    &trans    &trans    &trans       &trans    &kp EQUAL &kp N0    &trans                        &trans    &trans     &trans
             >;
         };
+    };
 };
 
